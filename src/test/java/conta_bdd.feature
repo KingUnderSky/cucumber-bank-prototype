@@ -2,6 +2,7 @@
 @tag
 Feature: Cliente faz saque de dinheiro Como um cliente, eu gostaria de sacar dinheiro em caixa eletrônico,
 para que eu não tenha que esperar numa fila de banco.
+  I want to use this template for my feature file
 
   @tag1
   Scenario: Cliente especial com saldo negativo
@@ -10,7 +11,9 @@ para que eu não tenha que esperar numa fila de banco.
     Then deve efetuar o saque e atualizar o saldo da conta para -300 reais
 
   @tag2
-  Scenario Outline: Cliente comum com saldo negativo
+  Scenario: Cliente comum com saldo negativo
     Given Um cliente comum com saldo atual de -300 reais
-    When for solicitado um saque no valor de 200 reais
-    Then não
+    When solicitar um saque de 200 reais
+    Then Não deve efetuar o saque e deve retornar a mensagem Saldo Insuficiente
+
+   
