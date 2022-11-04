@@ -10,6 +10,7 @@ para que eu não tenha que esperar numa fila de banco.
     Given Um cliente especial com saldo atual de -200 reais
     When for solicitado um saque no valor de 100 reais
     Then deve efetuar o saque e atualizar o saldo da conta para -300 reais
+    
 #Cenário de cliente comum
   @tag2
   Scenario Outline: Cliente comum com saldo negativo
