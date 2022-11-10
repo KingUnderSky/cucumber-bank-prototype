@@ -20,7 +20,7 @@ public class Conta {
 	 * Declaração da variável que irá indicar se o cliente é
 	 * do tipo especial
 	 */
-	boolean clienteEspecial = true;
+	boolean clienteEspecial = false;
 	
 	public int getSaldo() {
 		return saldo;
